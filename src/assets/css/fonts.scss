@@ -84,3 +84,40 @@
     url("../fonts/Rajdhani-Bold.ttf") format("truetype");
   font-display: swap; //폰트가 꺠지면 다른 폰트가 나오게 바꿔줌
 }
+
+//Wooridaum
+@font-face {
+  font-family: "Wooridaum";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/WooridaumL.eot");
+  src: url("../fonts/WooridaumL.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/WooridaumL.woff") format("woff2"),
+    url("../fonts/WooridaumL.woff2") format("woff"),
+    url("../fonts/WooridaumL.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wooridaum";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/WooridaumR.eot");
+  src: url("../fonts/WooridaumR.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/WooridaumR.woff") format("woff2"),
+    url("../fonts/WooridaumR.woff2") format("woff"),
+    url("../fonts/WooridaumR.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wooridaum";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/WooridaumB.eot");
+  src: url("../fonts/WooridaumB.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/WooridaumB.woff") format("woff2"),
+    url("../fonts/WooridaumB.woff2") format("woff"),
+    url("../fonts/WooridaumB.ttf") format("truetype");
+  font-display: swap;
+}

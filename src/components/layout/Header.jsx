@@ -7,7 +7,8 @@ function Header() {
       <div className="header__left">
         <ul>
           <li>
-            <Link to="about">About</Link>
+            <Link to="/about">About</Link>
+            <Link to="/reference">Reference</Link>
           </li>
         </ul>
       </div>
