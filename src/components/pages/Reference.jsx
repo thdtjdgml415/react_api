@@ -13,10 +13,9 @@ function Reference() {
   const [references, setReferences] = useState([]);
 
   useEffect(() => {
-    fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
+    fetch("https://thdtjdgml415.github.io/react_api/src/utils/reference.json")
       .then((response) => response.json())
-      // .then((result) => console.log(result.data.htmlRefer)) //데이터에 htmlRefer만 가져옴
-      .then((result) => setReferences(result.data.htmlRefer)) //객체인지 배열인지 확인이 필요함
+      .then((result) => setReferences(result.cssRef))
       .catch((error) => console.log("error", error));
   }, []);
 

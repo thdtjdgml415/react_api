@@ -1,21 +1,22 @@
 import React from "react";
 
-const ReferText = ({ id, title, desc, desc2, element, use }) => {
+const ReferText = ({ num, title, desc, descBasic, definition, descStar }) => {
   return (
     <li>
       <a href="/">
-        <span className="num">{id}</span>
+        <span className="num">{num}</span>
         <span className="name">{title}</span>
         <span className="desc">{desc}</span>
-        <span className="desc">{desc2}</span>
-        <span className="desc">{element}</span>
-        <span className="star">{use}</span>
+        <span className="desc">{descBasic}</span>
+        <span className="desc">{definition}</span>
+        <span className="star">{descStar}</span>
       </a>
     </li>
   );
 };
 
 const ReferCont = ({ references }) => {
+  console.log(references);
   return (
     <section className="cont__refer">
       <div className="container">
@@ -25,12 +26,12 @@ const ReferCont = ({ references }) => {
             {references.map((el, idx) => (
               <ReferText
                 key={idx}
-                id={el.id}
+                num={el.num}
                 title={el.title}
                 desc={el.desc}
-                desc2={el.desc2}
-                element={el.element}
-                use={el.use}
+                descBasic={el.descBasic}
+                definition={el.definition}
+                descStar={el.descStar}
               />
             ))}
           </ul>
