@@ -1,0 +1,115 @@
+{
+  "type": "css",
+  "cssRef": [
+    {
+      "num": 1,
+      "title": "accent-color",
+      "desc": "요소의 강조 색상을 지정합니다.",
+      "descBasic": "align-content : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "accent-color 요소의 강조 색상을 지정합니다.",
+        "align-content 콘텐츠 사이와 콘텐츠 주위 빈 공간을 플렉스 박스'의 교차축 또는 그리드의 블록 축을 따라 배치하는 방식을 결정합니다."
+      ]
+    },
+    {
+      "num": 2,
+      "title": "align-content",
+      "desc": "요소의 강조 색상을 지정합니다.",
+      "descBasic": "align-content : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★☆☆☆☆",
+      "definition": [
+        "콘텐츠 사이와 콘텐츠 주위 빈 공간을 플렉스 박스'의 교차축 또는 그리드의 블록 축을 따라 배치하는 방식을 결정합니다."
+      ]
+    },
+    {
+      "num": 3,
+      "title": "align-items",
+      "desc": "요소의 강조 색상을 지정합니다.",
+      "descBasic": "align-items : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "교차축에서 아이템 정렬 하는 속성입니다. 주로 flex에서 item들을 정렬할 때 사용됩니다.",
+        "Flexbox에서는 Cross Axis 항목의 정렬을 제어합니다."
+      ]
+    },
+    {
+      "num": 4,
+      "title": "align-self",
+      "desc": "그리드에서는 그리드 영역 내부에 항목을 정렬합니다 .",
+      "descBasic": "align-self : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["그리드에서는 그리드 영역 내부에 항목을 정렬합니다 ."]
+    },
+    {
+      "num": 5,
+      "title": "all",
+      "desc": "속성을 초기 값이나 상속된 값으로 설정하거나 다른 캐스케이드 레이어나 스타일시트 원본에 지정된 값으로 설정할 수 있습니다.",
+      "descBasic": "all : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "속성을 초기 값이나 상속된 값으로 설정하거나 다른 캐스케이드 레이어나 스타일시트 원본에 지정된 값으로 설정할 수 있습니다."
+      ]
+    },
+    {
+      "num": 6,
+      "title": "animation",
+      "desc": "애니메이션과 관련된 속성을 일괄적로 처리합니다.",
+      "descBasic": "animation : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["애니메이션과 관련된 속성을 일괄적로 처리합니다."]
+    },
+    {
+      "num": 7,
+      "title": "animation-delay",
+      "desc": "애니메이션 지연 시간을 설정합니다.",
+      "descBasic": "animation-delay : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★★★★",
+      "definition": ["애니메이션 지연 시간을 설정합니다."]
+    },
+    {
+      "num": 8,
+      "title": "animation-direction",
+      "desc": "애니메이션 움직임 방향을 설정합니다.",
+      "descBasic": "animation-direction : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["애니메이션 움직임 방향을 설정합니다."]
+    },
+    {
+      "num": 9,
+      "title": "animation-duration",
+      "desc": "애니메이션 움직임 방향을 설정합니다.",
+      "descBasic": "animation-duration : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["애니메이션 움직임 방향을 설정합니다."]
+    },
+    {
+      "num": 10,
+      "title": "animation-fill-mode",
+      "desc": "애니메이션이 끝난 후의 상태를 설정합니다.",
+      "descBasic": "animation-fill-mode : stretch",
+      "descApple": "flexbox",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["애니메이션이 끝난 후의 상태를 설정합니다."]
+    }
+  ]
+}
