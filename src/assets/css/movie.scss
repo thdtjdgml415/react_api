@@ -1,15 +1,122 @@
-.movie__wrap {
-  width: 100%;
-  height: 100vh;
-  background: rgb(0, 0, 0);
-  h1 {
-    color: #fff;
-  }
-}
 .movie__inner {
   width: 100%;
-  height: 300px;
-  background: #000;
+  ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 23%;
+      position: relative;
+      em {
+        display: block;
+        height: 80px;
+        margin-bottom: 30px;
+        font-family: var(--font-kor1);
+        .title {
+          padding: 5px 0;
+          display: inline-block;
+        }
+        .star {
+          background: #fff;
+          color: #000;
+          position: absolute;
+          left: 20px;
+          top: 20px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px;
+          font-weight: 800;
+        }
+      }
+    }
+    span {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.movie__search {
+  margin-bottom: 100px;
+  .container {
+    position: relative;
+  }
+  h2 {
+    color: var(--white);
+    font-size: 40px;
+    text-indent: -9999px;
+    height: 0;
+  }
+  input {
+    background: #000;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    color: #fff;
+    width: 100%;
+    padding: 12px 30px;
+    font-family: var(--font-kor1);
+  }
+  button {
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    font-family: var(--font-kor1);
+    cursor: pointer;
+    z-index: 1000;
+    background: #000;
+    &:hover {
+      background: var(--white);
+    }
+  }
+}
+
+// popularlist
+.movie__list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 50px;
+
+  a {
+    width: 18%;
+    margin-right: 2%;
+    position: relative;
+    .movie__wrap {
+      width: 100%;
+      img {
+        width: 23%;
+      }
+    }
+    .popular__title {
+      color: #fff;
+      font-size: 1vw;
+    }
+    .movie__vote {
+      color: #fff;
+      display: inline-block;
+      padding: 5px 10px;
+      background: rgba(67, 255, 4, 0);
+      border-radius: 50px;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 1px solid #fff;
+    }
+    .movie__rank {
+      font-size: 3vw;
+      font-family: var(--font-sub1);
+      position: absolute;
+      left: -10px;
+      top: -40px;
+      color: #fff;
+    }
+  }
 }

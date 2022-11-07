@@ -10,12 +10,12 @@ import Contact from "../layout/Contact";
 //변수 : 저장 , 추가 , 변경 --> 자동으로 변경 (리액트 훅)
 
 function Reference() {
-  const [references, setReferences] = useState([]);
+  const [references, setreferences] = useState([]);
 
   useEffect(() => {
-    fetch("https://thdtjdgml415.github.io/react_api/src/utils/reference.json")
+    fetch("http://thdtjdgml415.github.io/react_api/src/utils/reference.json")
       .then((response) => response.json())
-      .then((result) => setReferences(result.cssRef))
+      .then((result) => setreferences(result.cssRef))
       .catch((error) => console.log("error", error));
   }, []);
 

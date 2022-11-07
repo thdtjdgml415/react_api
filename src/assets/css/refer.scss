@@ -14,9 +14,9 @@
       width: 100%;
       color: var(--white);
       align-items: center;
+
       span {
         display: inline-block;
-        padding: 15px 20px;
       }
       .num {
         flex: 1 1 5%;
@@ -32,8 +32,9 @@
         border-right: 1px solid var(--bg-dark-border);
       }
       .star {
-        flex: 1 1 10%;
+        flex: 1 1 19%;
         text-align: center;
+        display: flex;
       }
     }
   }

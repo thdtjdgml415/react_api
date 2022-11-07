@@ -9,6 +9,7 @@
   color: var(--white);
   padding: 0 10px;
   background: var(--bg-dark);
+  z-index: 10000;
 
   a {
     display: inline-block;
