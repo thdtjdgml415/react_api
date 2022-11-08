@@ -8,7 +8,10 @@ import { Pagination } from "swiper";
 
 function MovieListCont(props) {
   return (
-    <a href={`https://www.themoviedb.org/movie/${props.lists.id}`}>
+    <a
+      className="movie__popular"
+      href={`https://www.themoviedb.org/movie/${props.lists.id}`}
+    >
       <img
         src={`https://image.tmdb.org/t/p/w500/${props.lists.poster_path}`}
         alt={`${props.lists.title}`}

@@ -81,8 +81,10 @@
 
 // display: flex;
 // flex-wrap: wrap;
-
-a {
+.movielist__inner {
+  margin-bottom: 50px;
+}
+.movie__popular {
   width: 18%;
   margin-right: 2%;
   position: relative;
@@ -108,7 +110,7 @@ a {
     border-radius: 50px;
     text-align: center;
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 0;
     border: 1px solid #fff;
   }
