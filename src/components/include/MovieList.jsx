@@ -1,4 +1,10 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper";
 
 function MovieListCont(props) {
   return (
@@ -21,13 +27,25 @@ function MovieList(props) {
   return (
     <div className="movielist__inner">
       <div className="container">
-        <ul className="movie__list">
-          {props.lists.map((lists, idx) =>
-            idx < 5 ? (
+        {/* <ul className="movie__list"> */}
+        <Swiper
+          slidesPerView={6}
+          centeredSlides={true}
+          spaceBetween={30}
+          grabCursor={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {props.lists.map((lists, idx) => (
+            <SwiperSlide>
               <MovieListCont key={idx} rank={idx} lists={lists} />
-            ) : null
-          )}
-        </ul>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {/* </ul> */}
       </div>
     </div>
   );
