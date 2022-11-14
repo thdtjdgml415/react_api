@@ -5,26 +5,16 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
-function MovieListCont(props) {
+function YoutubeListCont({ lists }) {
   return (
-    <a
-      className="movie__popular"
-      href={`https://www.themoviedb.org/movie/${props.lists.id}`}
-    >
-      <img
-        src={`https://image.tmdb.org/t/p/w500/${props.lists.poster_path}`}
-        alt={`${props.lists.title}`}
-      />
-      <em>
-        <p className="movie__rank">{props.rank + 1}</p>
-        <p className="popular__title">{props.lists.title}</p>
-        <div className="movie__vote">{props.lists.vote_average}</div>
-      </em>
-    </a>
+    <img
+      src={lists.snippet.thumbnails.medium.url}
+      alt={lists.snippet.description}
+    />
   );
 }
 
-function MovieList(props) {
+function YoutubeSlider({ youtubeLists }) {
   return (
     <div className="movielist__inner">
       <div className="container">
@@ -49,9 +39,9 @@ function MovieList(props) {
             modules={[Autoplay, EffectCoverflow, Pagination]}
             className="mySwiper"
           >
-            {props.lists.map((lists, idx) => (
+            {youtubeLists.map((lists, idx) => (
               <SwiperSlide>
-                <MovieListCont key={idx} rank={idx} lists={lists} />
+                <YoutubeListCont key={idx} lists={lists} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -61,4 +51,4 @@ function MovieList(props) {
   );
 }
 
-export default MovieList;
+export default YoutubeSlider;

@@ -34,6 +34,7 @@ function Movie() {
   //     .catch((error) => console.log(error));
   // };
 
+  //인기추천
   useEffect(() => {
     fetch(
       "https://api.themoviedb.org/3/movie/popular?api_key=0466376d0c5ab578b755f58c7beec394&language=ko-KOR&page=1&&total_results=4"
@@ -43,6 +44,7 @@ function Movie() {
       .catch((error) => console.log("error", error));
   }, []);
 
+  //검색
   useEffect(() => {
     fetch(
       "https://api.themoviedb.org/3/search/movie?api_key=0466376d0c5ab578b755f58c7beec394&language=ko-KOR&page=1&include_adult=false&query=마블"
