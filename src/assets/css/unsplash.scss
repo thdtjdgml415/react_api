@@ -11,3 +11,20 @@
     }
   }
 }
+
+// Tag
+.unsplash__taginner {
+  display: inline-block;
+  .Unsplashbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    transition: all 0.4s;
+    background: #000;
+    &:hover {
+      color: rgb(255, 34, 255);
+    }
+  }
+}

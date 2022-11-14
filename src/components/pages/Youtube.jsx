@@ -5,6 +5,7 @@ import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import YoutubeSlider from "../include/YoutubeSlider";
 import YoutubeSearch from "../include/YoutubeSearch";
+import YoutubeTag from "../include/YoutubeTag";
 import YoutubeCont from "../include/YoutubeCont";
 import Contact from "../layout/Contact";
 import { useEffect, useState } from "react";
@@ -43,6 +44,7 @@ function Youtube() {
         <Title title={["Youtube", "reference api"]} />
         <YoutubeSlider youtubeLists={youtubeLists} />
         <YoutubeSearch onSearch={search} />
+        <YoutubeTag onSearch={search} />
         <YoutubeCont youtubes={youtubes} />
         <Contact />
       </Contents>

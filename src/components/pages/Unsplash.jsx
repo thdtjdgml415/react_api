@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import UnsplashCont from "../include/UnsplashCont";
 import UnsplashSlider from "../include/UnsplashSlider";
 import UnsplashSearch from "../include/UnsplashSearch";
-import UnsplashBtn from "../include/UnsplashBtn";
+import UnsplashTag from "../include/UnsplashTag";
 import Contact from "../layout/Contact";
 
 function Unsplash() {
@@ -16,7 +16,7 @@ function Unsplash() {
 
   const search = async (query) => {
     await fetch(
-      `https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=bdVnXh11IobT8sA4GyQCDUTan0ung1hDAaeb1vW3tJE&per_page=1&language=ko`
+      `https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=bdVnXh11IobT8sA4GyQCDUTan0ung1hDAaeb1vW3tJE&per_page=20&language=ko`
     )
       .then((response) => response.json())
       // .then((result) => console.log(result))
@@ -24,17 +24,13 @@ function Unsplash() {
       .catch((error) => console.log(error));
   };
   useEffect(() => {
-    fetch(
-      "https://api.unsplash.com/photos/random?client_id=bdVnXh11IobT8sA4GyQCDUTan0ung1hDAaeb1vW3tJE&count=30"
-    )
+    fetch("http://thdtjdgml415.github.io/react_api/src/utils/unsplash.json")
       .then((response) => response.json())
       // .then((result) => console.log(result))
       .then((result) => setImages(result))
       .catch((error) => console.log(error));
 
-    fetch(
-      "https://api.unsplash.com/photos/random?client_id=bdVnXh11IobT8sA4GyQCDUTan0ung1hDAaeb1vW3tJE&count=30"
-    )
+    fetch("http://thdtjdgml415.github.io/react_api/src/utils/unsplash.json")
       .then((response) => response.json())
       // .then((result) => console.log(result))
       .then((result) => setRandom(result))
@@ -47,7 +43,7 @@ function Unsplash() {
         <Title title={["Unsplash", "reference api"]} />
         <UnsplashSlider random={random} />
         <UnsplashSearch onSearch={search} />
-        <UnsplashBtn />
+        <UnsplashTag onSearch={search} />
         <UnsplashCont images={images} />
         <Contact />
       </Contents>

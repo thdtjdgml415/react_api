@@ -1,42 +1,40 @@
 import React from "react";
 
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow, Pagination } from "swiper";
-function UnsplashSliderlist({ unsplashslide }) {
-  return (
-    <img
-      src={unsplashslide.urls.regular}
-      alt={unsplashslide.urls.alt_description}
-    />
-  );
+import { Pagination } from "swiper";
+
+function UnsplashSliderlist({ lists }) {
+  return <img src={lists.urls.regular} alt={lists.urls.alt_description} />;
 }
 
 function UnsplashSlider({ random }) {
   return (
-    <div className="movielist__inner">
+    <div className="youtubelist__inner">
       <div className="container">
-        <ul className="movie__list">
+        <ul className="youtube__list">
           <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            initialSlide={"3"}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
+            slidesPerView={1}
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
             }}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: false,
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
             }}
-            modules={[Autoplay, EffectCoverflow, Pagination]}
+            modules={[Pagination]}
             className="mySwiper"
           >
             {random.map((unsplashslide, idx) => (

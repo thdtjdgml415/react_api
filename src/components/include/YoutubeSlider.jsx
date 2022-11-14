@@ -1,10 +1,9 @@
 import React from "react";
 
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow, Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 function YoutubeListCont({ lists }) {
   return (
     <img
@@ -16,32 +15,26 @@ function YoutubeListCont({ lists }) {
 
 function YoutubeSlider({ youtubeLists }) {
   return (
-    <div className="movielist__inner">
+    <div className="youtubelist__inner">
       <div className="container">
-        <ul className="movie__list">
+        <ul className="youtube__list">
           <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
+            slidesPerView={4}
+            spaceBetween={30}
             centeredSlides={true}
-            slidesPerView={"auto"}
-            initialSlide={"3"}
+            pagination={{
+              clickable: true,
+            }}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: false,
-            }}
-            modules={[Autoplay, EffectCoverflow, Pagination]}
+            modules={[Pagination, Autoplay]}
             className="mySwiper"
           >
-            {youtubeLists.map((lists, idx) => (
+            {youtubeLists.map((youtubelists, index) => (
               <SwiperSlide>
-                <YoutubeListCont key={idx} lists={lists} />
+                <YoutubeListCont key={index} lists={youtubelists} />
               </SwiperSlide>
             ))}
           </Swiper>

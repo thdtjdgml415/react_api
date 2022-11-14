@@ -18,7 +18,7 @@ function MovieListCont(props) {
       <em>
         <p className="movie__rank">{props.rank + 1}</p>
         <p className="popular__title">{props.lists.title}</p>
-        <div className="movie__vote">{props.lists.vote_average}</div>
+        <div className="movie__vote">평점: {props.lists.vote_average}</div>
       </em>
     </a>
   );
@@ -28,6 +28,7 @@ function MovieList(props) {
   return (
     <div className="movielist__inner">
       <div className="container">
+        <h1>인기영화 순위</h1>
         <ul className="movie__list">
           <Swiper
             effect={"coverflow"}

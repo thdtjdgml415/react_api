@@ -40,7 +40,7 @@
 }
 
 .movie__search {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   .container {
     position: relative;
   }
@@ -84,7 +84,32 @@
 
 .movielist__inner {
   width: 100%;
+  margin-bottom: 30px;
+  h1 {
+    color: #fff;
+  }
   .swiper-wrapper {
     width: 25%;
+    position: relative;
+  }
+  .movie__rank {
+    display: inline-block;
+    font-family: var(--font-sub1);
+    font-size: 80px;
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+  }
+  .popular__title {
+    color: #fff;
+    display: inline-block;
+  }
+  .movie__vote {
+    color: #eee;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
