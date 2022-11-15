@@ -23,13 +23,11 @@ function Youtube() {
       .then((result) => setYoutubes(result.items))
       .catch((error) => console.log(error));
   };
-
-  fetch("http://thdtjdgml415.github.io/codingclass/youtube.json")
-    .then((response) => response.json())
-    .then((result) => setYoutubesList(result.items))
-    .catch((error) => console.log("error", error));
-
   useEffect(() => {
+    fetch("http://thdtjdgml415.github.io/codingclass/youtube.json")
+      .then((response) => response.json())
+      .then((result) => setYoutubesList(result.items))
+      .catch((error) => console.log("error", error));
     fetch("http://thdtjdgml415.github.io/codingclass/youtube.json")
       .then((response) => response.json())
       .then((result) => setYoutubes(result.items))
