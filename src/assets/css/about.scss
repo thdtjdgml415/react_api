@@ -8,5 +8,18 @@
   }
   .about__desc {
     color: #fff;
+    margin-bottom: 300px;
+  }
+  .about__desc2 {
+    display: flex;
+    img {
+      width: 50%;
+      border-radius: 50px;
+    }
+    .about__inner__desc {
+      box-sizing: border-box;
+      padding: 0 30px;
+      color: #fff;
+    }
   }
 }
