@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
-function YoutubeListCont({ lists }) {
+function YoutubeListCont({ index, lists }) {
   return (
     <img
       src={lists.snippet.thumbnails.medium.url}
@@ -33,7 +33,7 @@ function YoutubeSlider({ youtubeLists }) {
             className="mySwiper"
           >
             {youtubeLists.map((youtubelists, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <YoutubeListCont key={index} lists={youtubelists} />
               </SwiperSlide>
             ))}

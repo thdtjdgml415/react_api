@@ -16,7 +16,6 @@ const ReferText = ({ num, title, desc, descBasic, definition, descStar }) => {
 };
 
 const ReferCont = ({ references }) => {
-  console.log(references);
   return (
     <section className="cont__refer">
       <div className="container">

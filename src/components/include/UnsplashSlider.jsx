@@ -38,7 +38,7 @@ function UnsplashSlider({ random }) {
             className="mySwiper"
           >
             {random.map((unsplashslide, idx) => (
-              <SwiperSlide>
+              <SwiperSlide key={idx}>
                 <UnsplashSliderlist key={idx} lists={unsplashslide} />
               </SwiperSlide>
             ))}

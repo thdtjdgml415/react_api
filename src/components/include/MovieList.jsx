@@ -51,7 +51,7 @@ function MovieList(props) {
             className="mySwiper"
           >
             {props.lists.map((lists, idx) => (
-              <SwiperSlide>
+              <SwiperSlide key={idx}>
                 <MovieListCont key={idx} rank={idx} lists={lists} />
               </SwiperSlide>
             ))}
